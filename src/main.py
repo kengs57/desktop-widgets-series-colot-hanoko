@@ -172,28 +172,28 @@ class TransparentWindow(QMainWindow):
                 self.assets_dir / "고양이메이드롯.png",
             ],
 
-            # 3) 💤 평상시 (Idle): 기본 평상시 코냥이
+            # 3) 💤 평상시 (Idle): 기본 평상시 코냥이 (정수리먹롯.png)
             State.IDLE: [
-                self.assets_dir / "cat_idle.png",
+                self.assets_dir / "정수리먹롯.png",
                 self.assets_dir / "고양이메이드롯.png",
             ],
 
-            # 4) ⌨️ 열일 중 (Typing): 키보드 타자 치는 코냥이
+            # 4) ⌨️ 열일 중 (Typing): 키보드 타자 치는 코냥이 (만세롯.png)
             State.TYPING: [
-                self.assets_dir / "cat_typing.png",
+                self.assets_dir / "만세롯.png",
                 self.assets_dir / "고양이메이드롯.png",
             ],
 
-            # 5) 🛌 5분 유휴 (Afk): 5분 이상 키 입력 없을 때
+            # 5) 🛌 5분 유휴 (Afk): 5분 이상 키 입력 없을 때 (원형탈모코냥.png)
             State.AFK: [
-                self.assets_dir / "cat_afk.png",
+                self.assets_dir / "원형탈모코냥.png",
                 self.assets_dir / "고양이메이드롯.png",
             ],
         }
 
-        # 6) 💬 마우스 좌클릭 시 3초간 띄우는 츤데레 말풍선 이미지
+        # 6) 💬 마우스 좌클릭 시 3초간 띄우는 말풍선 이미지: 까꿍롯.png
         self.speech_bubble_files = [
-            self.assets_dir / "speech_tsundere.png",
+            self.assets_dir / "까꿍롯.png",
             self.assets_dir / "고양이메이드롯.png",
         ]
 

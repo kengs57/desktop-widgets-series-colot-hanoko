@@ -59,7 +59,7 @@ class ConyangWidget(QWidget):
         """assets 폴더에서 코냥이 이미지 로드"""
         self.images = {}
         
-        idle_path = self.assets_dir / "cat_idle.png"
+        idle_path = self.assets_dir / "정수리먹롯.png"
         happy_path = self.assets_dir / "cat_happy.png"
         
         if idle_path.exists():
@@ -92,7 +92,7 @@ class ConyangWidget(QWidget):
     def setup_tray_icon(self):
         """트레이 아이콘 및 메뉴 구성"""
         self.tray_icon = QSystemTrayIcon(self)
-        idle_path = self.assets_dir / "cat_idle.png"
+        idle_path = self.assets_dir / "정수리먹롯.png"
         if idle_path.exists():
             self.tray_icon.setIcon(QIcon(str(idle_path)))
         

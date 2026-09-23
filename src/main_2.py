@@ -103,11 +103,11 @@ def get_system_audio_peak() -> float:
     return 0.0
 
 class State(Enum):
-    IDLE = auto()       # 💤 평상시
-    TYPING = auto()     # ⌨️ 열일 중 (타이핑)
-    AFK = auto()        # 🛌 5분 유휴 (입력 없음)
-    SINGING = auto()    # 🎤 음악 재생 중 (노래하는 하노코: kimchi_love_hanoko.png)
-    EXHAUSTED = auto()  # 😵 음악 멈춘 후 3초간 (힘들어하는 하노코: 123d.png)
+    IDLE = auto()       # 💤 평상시 (하노코데뷔키링.png)
+    TYPING = auto()     # ⌨️ 열일 중 (타이핑: 하노롱.png)
+    AFK = auto()        # 🛌 5분 유휴 (입력 없음: 멘헤라노코.png)
+    SINGING = auto()    # 🎤 음악 재생 중 (김치사랑노코.png)
+    EXHAUSTED = auto()  # 😵 음악 멈춘 후 3초간 (화난하노코.png)
 
 def get_base_dir() -> Path:
     """
@@ -159,21 +159,21 @@ class TransparentWindow(QMainWindow):
         # 🖼️ [하노코 버전 상태별 이미지 파일 경로 매핑]
         # =========================================================================
         self.image_files = {
-            # 1) 🎤 음악 재생 중 (Singing): kimchi_love_hanoko.png
+            # 1) 🎤 음악 재생 중 (Singing): 김치사랑노코.png
             State.SINGING: [
-                self.assets_dir / "kimchi_love_hanoko.png",
+                self.assets_dir / "김치사랑노코.png",
                 self.assets_dir / "끗.png",
             ],
 
-            # 2) 😵 음악 멈춘 후 3초간 (Exhausted): 123d.png
+            # 2) 😵 음악 멈춘 후 3초간 (Exhausted): 화난하노코.png
             State.EXHAUSTED: [
-                self.assets_dir / "123d.png",
+                self.assets_dir / "화난하노코.png",
                 self.assets_dir / "끗.png",
             ],
 
-            # 3) 💤 평상시 (Idle): 데뷔키링.png
+            # 3) 💤 평상시 (Idle): 하노코데뷔키링.png
             State.IDLE: [
-                self.assets_dir / "데뷔키링.png",
+                self.assets_dir / "하노코데뷔키링.png",
                 self.assets_dir / "끗.png",
             ],
 
@@ -183,16 +183,16 @@ class TransparentWindow(QMainWindow):
                 self.assets_dir / "끗.png",
             ],
 
-            # 5) 🛌 5분 유휴 (Afk): 유휴5분.png
+            # 5) 🛌 5분 유휴 (Afk): 멘헤라노코.png
             State.AFK: [
-                self.assets_dir / "유휴5분.png",
+                self.assets_dir / "멘헤라노코.png",
                 self.assets_dir / "끗.png",
             ],
         }
 
-        # 6) 💬 마우스 좌클릭 시 3초간 띄우는 말풍선 이미지: 누르면나오는거.png
+        # 6) 💬 마우스 좌클릭 시 3초간 띄우는 말풍선 이미지: 하무스타와의추억사진노코.png
         self.speech_bubble_files = [
-            self.assets_dir / "누르면나오는거.png",
+            self.assets_dir / "하무스타와의추억사진노코.png",
             self.assets_dir / "끗.png",
         ]
 

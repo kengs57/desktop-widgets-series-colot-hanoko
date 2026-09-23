@@ -30,12 +30,12 @@
 
 | 상태 (State) / 기능 | 코롯 버전 (`main.py`) | 하노코 버전 (`main_2.py`) |
 | :--- | :--- | :--- |
-| **🎤 음악 재생 중 (`Singing`)** | `assets/곧켁롯.png` | `assets/kimchi_love_hanoko.png` |
-| **😵 음악 멈춤 3초간 (`Exhausted`)** | `assets/켁롯.png` | `assets/123d.png` |
-| **💤 평상시 (`Idle`)** | `assets/cat_idle.png` | `assets/데뷔키링.png` |
-| **⌨️ 열일 중 (`Typing`)** | `assets/cat_typing.png` | `assets/하노롱.png` |
-| **🛌 5분 유휴 (`Afk`)** | `assets/cat_afk.png` | `assets/유휴5분.png` |
-| **💬 3초 말풍선** | `assets/speech_tsundere.png` | `assets/누르면나오는거.png` |
+| **🎤 음악 재생 중 (`Singing`)** | `assets/곧켁롯.png` | `assets/김치사랑노코.png` |
+| **😵 음악 멈춤 3초간 (`Exhausted`)** | `assets/켁롯.png` | `assets/화난하노코.png` |
+| **💤 평상시 (`Idle`)** | `assets/정수리먹롯.png` | `assets/하노코데뷔키링.png` |
+| **⌨️ 열일 중 (`Typing`)** | `assets/만세롯.png` | `assets/하노롱.png` |
+| **🛌 5분 유휴 (`Afk`)** | `assets/원형탈모코냥.png` | `assets/멘헤라노코.png` |
+| **💬 3초 말풍선** | `assets/까꿍롯.png` | `assets/하무스타와의추억사진노코.png` |
 | **🖼️ 기본 예비 이미지** | `assets/고양이메이드롯.png` | `assets/끗.png` |
 
 ---
@@ -45,19 +45,19 @@
 ```text
 d:/Anti_projects/
 ├── assets/                  # 🖼️ PNG 이미지 리소스 폴더
-│   ├── kimchi_love_hanoko.png # 🎤 [하노코] 음악 재생 중 이미지
-│   ├── 123d.png             # 😵 [하노코] 음악 멈춘 직후 3초간 이미지
-│   ├── 데뷔키링.png         # 💤 [하노코] 평상시 이미지
+│   ├── 김치사랑노코.png       # 🎤 [하노코] 음악 재생 중 이미지
+│   ├── 화난하노코.png         # 😵 [하노코] 음악 멈춘 직후 3초간 이미지
+│   ├── 하노코데뷔키링.png     # 💤 [하노코] 평상시 이미지
 │   ├── 하노롱.png           # ⌨️ [하노코] 열일 이미지
-│   ├── 유휴5분.png          # 🛌 [하노코] 5분 유휴 이미지
-│   ├── 누르면나오는거.png   # 💬 [하노코] 3초 말풍선 이미지
+│   ├── 멘헤라노코.png         # 🛌 [하노코] 5분 유휴 이미지
+│   ├── 하무스타와의추억사진노코.png # 💬 [하노코] 3초 말풍선 이미지
 │   ├── 끗.png               # (Fallback) 하노코 예비 이미지
 │   ├── 곧켁롯.png           # 🎤 [코롯] 음악 재생 중 이미지
 │   ├── 켁롯.png             # 😵 [코롯] 음악 멈춘 직후 3초간 이미지
-│   ├── cat_idle.png         # 💤 [코롯] 평상시 이미지
-│   ├── cat_typing.png       # ⌨️ [코롯] 열일 이미지
-│   ├── cat_afk.png          # 🛌 [코롯] 5분 유휴 이미지
-│   ├── speech_tsundere.png  # 💬 [코롯] 3초 말풍선 이미지
+│   ├── 정수리먹롯.png         # 💤 [코롯] 평상시 이미지
+│   ├── 만세롯.png           # ⌨️ [코롯] 열일 이미지
+│   ├── 원형탈모코냥.png       # 🛌 [코롯] 5분 유휴 이미지
+│   ├── 까꿍롯.png           # 💬 [코롯] 3초 말풍선 이미지
 │   └── 고양이메이드롯.png    # (Fallback) 코롯 예비 이미지
 ├── sounds/                  # 🔊 사운드 리소스 폴더
 │   ├── 냐냐냐냐.wav 등 8종  # 코롯 신규 랜덤 효과음 (8종 중 무작위 1개 재생)
