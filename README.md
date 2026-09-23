@@ -78,34 +78,32 @@ d:/Anti_projects/
 
 ---
 
-## 🚀 실행 및 빌드 방법 (Getting Started)
+## 📥 다운로드 및 실행 방법 (Windows 전용)
 
-### 1. 가상환경 구축 및 의존성 패키지 설치
-`build.py` 스크립트를 사용하여 가상환경(`.venv`)을 생성하고 의존성을 자동 설치합니다:
-```bash
-python build.py --setup
-```
+파이썬 설치나 복잡한 설정 없이, 아래 링크에서 `.exe` 실행 파일을 다운로드하여 바로 실행하실 수 있습니다.
 
-### 2. PyInstaller 독립 실행 파일(.exe) 패키징 빌드
-* **전체 빌드 (코롯 & 하노코 둘 다)**:
-  ```bash
-  python build.py --build
-  ```
-* **하노코 위젯 전용 빌드 (`dist/하노코_데스크톱위젯.exe`)**:
-  ```bash
-  python build.py --build --target=2
-  ```
-* **코롯 위젯 전용 빌드 (`dist/코롯_데스크톱위젯.exe`)**:
-  ```bash
-  python build.py --build --target=1
-  ```
+### 1. 원클릭 다운로드
+| 파일 구분 | 다운로드 링크 | 파일 구성 |
+| :--- | :--- | :--- |
+| 🐱 **코롯 단독 실행 파일** | [**👉 desktop_widget_colot.exe 다운로드**](https://github.com/kengs57/desktop-widgets-series-colot-hanoko/releases/download/v1.0.0/desktop_widget_colot.exe) | 단독 실행 파일 (.exe) |
+| 🌸 **하노코 단독 실행 파일** | [**👉 desktop_widget_hanoko.exe 다운로드**](https://github.com/kengs57/desktop-widgets-series-colot-hanoko/releases/download/v1.0.0/desktop_widget_hanoko.exe) | 단독 실행 파일 (.exe) |
+| 📦 **통합 압축팩 (코롯 + 하노코)** | [**👉 desktop_widgets_series_colot_hanoko.zip 다운로드**](https://github.com/kengs57/desktop-widgets-series-colot-hanoko/releases/download/v1.0.0/desktop_widgets_series_colot_hanoko.zip) | 두 위젯 모두 포함 (.zip) |
 
-### 3. 소스코드 수동 실행 (개발 환경)
-* **하노코 위젯 실행**:
-  ```bash
-  .venv\Scripts\python.exe -m src.main_2
-  ```
-* **코롯 위젯 실행**:
-  ```bash
-  .venv\Scripts\python.exe -m src.main
-  ```
+> 💡 전체 버전 목록 및 세부 정보는 [GitHub v1.0.0 Releases 공식 페이지](https://github.com/kengs57/desktop-widgets-series-colot-hanoko/releases/tag/v1.0.0)에서 확인하실 수 있습니다.
+
+---
+
+### 2. 초간단 실행 방법
+1. 위 표에서 원하는 캐릭터의 **`.exe` 또는 `.zip` 파일을 다운로드**합니다.
+   * `.zip` 파일을 받으셨다면 원하는 폴더에 **압축을 푼 후** 실행해 주세요.
+2. 다운로드받은 파일을 원하는 위치(바탕화면, 폴더 등)에 두고 **더블 클릭하여 실행**합니다.
+3. ⚠️ **만약 "Windows의 PC 보호" (SmartScreen) 경고 창이 뜬다면?**
+   - 개발자 인증서가 등록되지 않은 개인 오픈소스 프로그램에서 나타나는 윈도우 기본 보안 안내입니다. (바이러스나 악성코드가 아니므로 안심하셔도 됩니다.)
+   - 화면의 **`추가 정보`** 글씨를 클릭한 뒤, 오른쪽 아래에 나타나는 **`실행`** 버튼을 누르면 정상적으로 시작됩니다.
+
+---
+
+### 3. 조작 및 사용법 (Controls)
+* 🖱️ **위젯 이동**: 마우스 **좌클릭 후 드래그**하여 바탕화면 원하는 위치로 자유롭게 이동합니다.
+* 💬 **인터랙션 & 사운드**: 캐릭터를 **좌클릭**하면 귀여운 말풍선과 함께 캐릭터 고유 효과음이 재생됩니다.
+* 🚪 **위젯 종료**: 캐릭터 위에서 마우스 **우클릭 ➔ [🚪 위젯 종료 (Quit)]**를 누르거나, 캐릭터를 클릭한 후 키보드의 **`Esc` 키**를 누르면 즉시 종료됩니다.
